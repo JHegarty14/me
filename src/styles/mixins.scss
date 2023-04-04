@@ -1,0 +1,15 @@
+@import 'variables';
+
+@mixin border_title {
+    border: 1px solid $gruvbox_light1;
+    background-color: $gruvbox_dark0;
+}
+
+@mixin terminal_button {
+    display: flex;
+    height: 12px;
+    width: 12px;
+    border-radius: 10px;
+    background-color: $gruvbox_gray;
+    margin: auto 5px;
+}

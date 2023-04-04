@@ -1,0 +1,6 @@
+@import '../../styles/mixins.scss';
+
+.list_container {
+    @include border_title;
+    min-height: 35vh;
+}
