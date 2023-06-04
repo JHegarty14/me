@@ -1,0 +1,21 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.mode {
+	@include footer_item;
+	@include stacked_footer_item;
+	width: 150px;
+	color: $gruvbox_dark0;
+}
+
+.normal {
+	background-color: $gruvbox_gray;
+}
+
+.insert {
+	background-color: $gruvbox_neutral_blue;
+}
+
+.visual {
+	background-color: $gruvbox_neutral_orange;
+}

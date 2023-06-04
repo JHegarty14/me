@@ -1,0 +1,39 @@
+@import '../../styles/mixins.scss';
+
+.preview_container {
+	@include border_title;
+	height: 50vh;
+	width: 75vw;
+}
+
+.preview_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	cursor: pointer;
+	text-align: left;
+}
+
+.image {
+	max-width: 50vw;
+	overflow: hidden;
+	max-height: 49vh;
+}
+
+.preview_sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 25vw;
+	height: 40vh;
+	padding: 0 0 0 1rem;
+}
+
+.preview_link {
+	color: unset;
+}
+
+.img_wrap {
+	margin-top: -73px;
+}

@@ -1,0 +1,25 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "^4.3"
+async-trait = "^0.1"
+chrono = { version = "0.4", features = ["serde"] }
+sept = { path = "../../sept/sept_core/lib" }
+futures-util = "^0.3"
+sea-orm = { version = "^0.11", features = [
+  "sqlx-postgres",
+  "runtime-actix-native-tls",
+  "macros",
+] }
+serde = { version = "1.0", features = ["derive"] }
+dotenv = "0.15.0"
+password-hash = "0.5.0"
+uuid = { version = "1", features = ["serde", "v4"] }
+jsonwebtoken = "^8.3"
+entity = { path = "entity" }
+migration = { path = "migration" }

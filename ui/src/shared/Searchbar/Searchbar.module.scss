@@ -1,0 +1,19 @@
+@import '../../styles/mixins.scss';
+
+.searchbar_container {
+	@include border_title;
+}
+
+.searchbar_input {
+	background-color: $gruvbox_dark0;
+	color: $gruvbox_light1;
+	border: none;
+	height: 100%;
+	width: 75vw;
+}
+
+input:focus {
+	outline: none;
+	background-color: $gruvbox_dark0;
+	caret-color: $gruvbox_light1;
+}

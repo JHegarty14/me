@@ -1,0 +1,17 @@
+{
+	"sept": {
+		"description": "An opinionated, performant web framework for Rust focused on adoptability and architectural soundness. sept is heavily inspired by my experience working with NestJS, Domain-Driven Design, and the iDesign methodology. The backend of this site is built with sept.",
+		"link": "https://github.com/JHegarty14/sept",
+		"img": "septImg"
+	},
+	"quicksync": {
+		"description": "An experimental TypeScript library to manage shared, synchronous, independent state inspired by Clojure Atoms. I've always found the existing concurrency paradigms for Typescript and NodeJS lacking, and so quicksync was born out of a desire to create a more intuitive way to manage state in a concurrent environment.",
+		"link": "https://github.com/JHegarty14/quicksync",
+		"img": "quicksyncImg"
+	},
+	"dotfiles": {
+		"description": "My collection of dotfiles for neovim, zsh, tmux, and more. A peek behind the curtain of how I like to work, and the inspiration for the design of this site!",
+		"link": "https://github.com/JHegarty14/dotfiles",
+		"img": "dotfilesImg"
+	}
+}

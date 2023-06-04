@@ -1,0 +1,31 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+.detail_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.post_title {
+	@include title_row;
+}
+
+.post_contributor {
+	display: flex;
+	width: 100%;
+	text-align: left;
+}
+
+.post_content {
+	text-align: left;
+	width: 100%;
+	padding: 1em;
+}
+
+.markdown_previewer {
+	background-color: $gruvbox-dark0 !important;
+	color: $gruvbox-light1 !important;
+	padding-top: 1em;
+}

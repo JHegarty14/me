@@ -1,0 +1,92 @@
+@import '../../styles/variables.scss';
+
+.title_row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+}
+
+.button_container {
+	position: absolute;
+	right: 30px;
+	border: 1px solid $gruvbox_light1;
+	border-radius: 0.5em;
+	cursor: pointer;
+	padding: 0.5em 1em;
+	opacity: 0.7;
+	&:hover {
+		border-color: $gruvbox_neutral_orange;
+		color: $gruvbox_neutral_orange;
+		opacity: 1;
+		transition: border, color, opacity;
+		transition-duration: 0.25s;
+		transition-timing-function: ease-in-out;
+	}
+}
+
+.edit_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.post_container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+	max-width: 70vw;
+	padding: 1em 0;
+	min-height: 100px;
+}
+
+.post_fields {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	width: 65%;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.post_title {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0.5em 0;
+}
+
+.post_date {
+	font-size: 0.8em;
+	padding: 0.5em 0;
+}
+
+.post_actions {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	justify-content: space-between;
+	width: 35%;
+	padding: 0.5em 0;
+	height: 80px;
+}
+
+.action_button {
+	border: 1px solid $gruvbox_light1;
+	border-radius: 0.5em;
+	cursor: pointer;
+	padding: 0.5em 1em;
+	opacity: 0.7;
+	&:hover {
+		border-color: $gruvbox_neutral_orange;
+		color: $gruvbox_neutral_orange;
+		opacity: 1;
+		transition: border, color, opacity;
+		transition-duration: 0.25s;
+		transition-timing-function: ease-in-out;
+	}
+}

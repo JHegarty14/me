@@ -1,0 +1,13 @@
+@import '../../../styles/variables.scss';
+
+.landing_menu {
+	color: $gruvbox_light1;
+	font-size: 0.9em;
+	line-height: 2em;
+	width: 40vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 500px;
+}

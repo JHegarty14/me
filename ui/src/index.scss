@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import './styles/variables.scss';
+
+body {
+	margin: 0;
+	font-family: 'Ubuntu Mono', monospace;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: $gruvbox_dark0;
+	color: $gruvbox_light1;
+}
+
+*::-webkit-scrollbar {
+	width: 0.5em;
+}
+*::-webkit-scrollbar-track {
+	background-color: $gruvbox_dark1;
+}
+*::-webkit-scrollbar-thumb {
+	background-color: $gruvbox_gray;
+	border-radius: 1em;
+}
+
+code {
+	font-family: 'Ubuntu Mono', monospace;
+}

@@ -1,0 +1,20 @@
+@import '../../styles/variables.scss';
+
+.back_btn_row {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1em 0;
+}
+
+.back_btn {
+	cursor: pointer;
+	opacity: 0.7;
+	&:hover {
+		color: $gruvbox_neutral_orange;
+		opacity: 1;
+		transition: opacity 0.25s ease-in-out;
+	}
+}

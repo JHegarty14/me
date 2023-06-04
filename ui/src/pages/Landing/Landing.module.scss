@@ -1,0 +1,63 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.landing_container {
+	height: 100%;
+	min-height: 100vh;
+	background-color: $gruvbox_dark0;
+	overflow-x: hidden;
+	@media screen and (max-width: $small) {
+		overflow-y: hidden;
+	}
+}
+.hidden {
+	max-height: 100vh;
+	max-width: 100vw;
+	overflow: hidden;
+}
+
+.terminal_header {
+	height: 3vh;
+	background-color: $terminal_background;
+	color: $terminal_text;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid $black;
+	box-shadow: 1px 3px 2px 0px $terminal_border;
+}
+.terminal_keymap {
+	opacity: 0.4;
+	margin-right: 5px;
+}
+
+.ascii_banner_container {
+	@include ascii_banner_container;
+}
+
+.ascii_banner {
+	@include ascii_banner;
+}
+
+.button_group {
+	display: flex;
+	flex-direction: row;
+}
+.close_button {
+	@include terminal_button;
+	&:hover {
+		background-color: $gruvbox_neutral_red;
+	}
+}
+.minimize_button {
+	@include terminal_button;
+	&:hover {
+		background-color: $gruvbox_neutral_yellow;
+	}
+}
+.expand_button {
+	@include terminal_button;
+	&:hover {
+		background-color: $gruvbox_neutral_green;
+	}
+}

@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.icon_button {
+	background: none;
+	padding: 0 2em;
+	display: flex;
+	flex-direction: row;
+	margin: 1em;
+	align-items: center;
+	cursor: pointer;
+	&:hover {
+		color: $gruvbox_neutral_orange;
+	}
+	@media screen and (max-width: $small) {
+		justify-content: center;
+	}
+}
+
+.button_icon {
+	min-height: 100%;
+}
+
+.button_text {
+	font-size: 1em;
+	line-height: 2em;
+	margin-left: 1em;
+}
+
+.button_keymap {
+	@media screen and (max-width: $small) {
+		display: none;
+	}
+	color: $gruvbox_neutral_red;
+	margin-left: auto;
+}

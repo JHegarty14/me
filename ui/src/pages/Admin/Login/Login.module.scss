@@ -1,0 +1,79 @@
+@import '../../../styles/variables.scss';
+
+.login_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	color: $gruvbox-light1;
+}
+
+.error_toast {
+	background-color: $gruvbox-neutral-red;
+	color: $gruvbox-dark0;
+	border: 1px solid $gruvbox-neutral-red;
+	padding: 0.5em 0;
+	margin: 0.5em 0 2em 0;
+	width: calc(100% - 2px);
+}
+
+.placeholder {
+	height: 1.125em;
+	padding: 0.5em 0;
+	margin: 0.5em 0 2em 0;
+}
+
+.dismiss_btn {
+	float: right;
+	padding: 0 1em 0 0;
+	margin-left: -1em;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.form_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 125px;
+	width: 15vw;
+	padding: 5em;
+	> label {
+		text-align: left;
+		width: 100%;
+	}
+}
+
+.input {
+	background-color: $gruvbox-dark0;
+	color: $gruvbox-light1;
+	border: 1px solid $gruvbox-light1;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	margin: 0.5em 0 2em 0;
+	width: 100%;
+	&:focus {
+		outline: none;
+		border: 1px solid $gruvbox-neutral-orange;
+	}
+}
+
+.submit_btn {
+	background-color: $gruvbox-dark0;
+	color: $gruvbox-light1;
+	border: 1px solid $gruvbox-dark0;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	margin: 0.5em 0 2.5em 0;
+	width: 100%;
+	&:hover {
+		cursor: pointer;
+		border: 1px solid $gruvbox-neutral-orange;
+		color: $gruvbox-neutral-orange;
+		transition: color, border 0.5s ease-in-out;
+		transition-duration: 0.5s;
+		transition-timing-function: ease-in-out;
+	}
+}

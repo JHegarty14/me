@@ -1,0 +1,15 @@
+.writing_results_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.result_list_container {
+	width: 75vw;
+	max-width: 750px;
+}
+
+.writing_results_title {
+	padding: 0.5em 0;
+}
